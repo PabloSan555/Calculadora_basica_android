@@ -2,6 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="30dp"
     android:background="#fff"
     android:orientation="vertical"
     android:textAlignment="center">
@@ -30,7 +33,7 @@
         android:layout_gravity="center"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         android:background="#ffff"
         android:orientation="horizontal"
         android:paddingLeft="0dp"
@@ -60,7 +63,7 @@
         android:orientation="horizontal"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
-        android:paddingBottom="50dp">
+        android:paddingBottom="20dp">
 
         <EditText
             android:id="@+id/segundoval"
@@ -78,7 +81,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="415dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
@@ -90,6 +93,7 @@
             android:id="@+id/btn_sumar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="sumar"
             android:text="+"
             android:textSize="15sp" />
 
@@ -97,7 +101,68 @@
             android:id="@+id/btn_restar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="restar"
             android:text="-" />
+
+        <Button
+            android:id="@+id/btn_dividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="dividir"
+            android:text="/"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_multiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="multiplicar"
+            android:text="X"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:onClick="resetear"
+            android:text="RESETEAR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:id="@+id/txt_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:hint="RESULTADO"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
     </LinearLayout>
 </LinearLayout>
