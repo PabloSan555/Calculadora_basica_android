@@ -20,7 +20,7 @@
             android:label="@string/app_name"
             android:exported="true">
             <intent-filter>
-        <action android:name="android.intent.action./MAIN"></action>
+        <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
